@@ -9,20 +9,12 @@ const PersonalInfo = () => {
         {
           id: 1,
           name: "Email",
-          content: (
-            <>
-              <a href="mailto:jacek@gonera.design">jacek@gonera.design</a>
-            </>
-          )
+          content: "",
         },
         {
           id: 2,
           name: "Phone",
-          content: (
-            <>
-                <a href="tel:+48504946549" target="_blank">+48<b> 504 946 549</b></a>
-            </>
-            ),
+          content: "",
         } 
       ],
     },
