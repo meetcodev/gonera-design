@@ -6,7 +6,8 @@ const Home = () => {
   return (
     <>
       <div className="tokyo_tm_home">
-        <div className="home_content">
+        <div  className="home_content"
+        >
           <div className="avatar">
             <div
               className="image avatar_img"

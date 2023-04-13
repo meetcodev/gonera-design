@@ -442,7 +442,8 @@ h6 {
   background-size: cover;
   animation: morph 8s ease-in-out infinite 1s;
   background-blend-mode: multiply;
-  box-shadow: inset 0px 0px 0px 9px rgba(255, 255, 255, 0.3);
+//   box-shadow: inset 0px 0px 0px 9px rgba(255, 255, 255, 0.3);
+box-shadow: inset 0px 0px 0px 7px rgba(8, 15, 109, .8);
   border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
   overflow: hidden;
 }
@@ -1568,9 +1569,9 @@ body.modal {
     padding: 0 40px;
     background: #fefefe;
   }
-  .tokyo_tm_section {
-    padding-left: 290px;
-  }
+//   .tokyo_tm_section {  //BUG <- do korekty 
+//     padding-left: 290px;
+//   }
 }
 @media (max-width: 1200px) {
   .tokyo_tm_mobile_menu {

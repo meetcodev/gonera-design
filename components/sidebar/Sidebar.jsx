@@ -8,15 +8,16 @@ import { useState } from "react";
 import StainHamburger from "./StainHamburger";
 
 const Sidebar = () => {
-  const router = useRouter();
-  const [click, setClick] = useState(false);
-  const handleClick = () => setClick(!click);
+    const router = useRouter();
+//   const [click, setClick] = useState(false);
+//   const handleClick = () => setClick(!click);
 
     return (
         <>
         <div className="header">
-            <div className="header-inner">
-            <div className="logo">
+            <div //className="header-inner"
+            >
+            {/* <div className="logo">
                 <Link className="navbar-brand" href="/">
                 <Image
                     width={140}
@@ -25,26 +26,28 @@ const Sidebar = () => {
                     alt="brand"
                 />
                 </Link>
-            </div>
+            </div> */}
             {/* End logo */}
 
-            <div className="my_trigger" onClick={handleClick}>
+            <div //className="my_trigger" onClick={handleClick}
+            >
                 <div
-                className={
-                    click
-                    ? "hamburger hamburger--collapse-r is-active"
-                    : "hamburger"
-                }
+                    // className={   click
+                    // ? "hamburger hamburger--collapse-r is-active"
+                    // : "hamburger"    }  
                 >
-                <div className="hamburger-box">
-                    <div className="hamburger-inner"></div>
+
+                <div 
+                    // className="hamburger-box"
+                >
+                    {/* <div className="hamburger-inner">sadsa</div> */}
+                    <StainHamburger />
                 </div>
                 </div>
                 {/* End hamburger menu */}
             </div>
                 <>
                 {/* StainHamburger */}
-                    <StainHamburger />
                 {/* End StainHamburger */}
                 </>
             </div>
@@ -52,7 +55,7 @@ const Sidebar = () => {
         {/* Header */}
 
         {/* START LEFT MENU CONTENT */}
-        <div className={click ? "leftpart active" : "leftpart"}>
+        {/* <div className={click ? "leftpart active" : "leftpart"}>
             <div className="leftpart_inner">
             <div className="logo">
                 <Link className="navbar-brand" href="/">
@@ -63,11 +66,10 @@ const Sidebar = () => {
                     alt="brand"
                 />
                 </Link>
-            </div>
+            </div> */}
             {/* END LOGO */}
 
-            <div className="menu">
-            {/* <div className="nav"> */}
+            {/* <div className="menu">
                 <ul>
                 {sidebarData.map((item) => (
                     <li key={item.id} onClick={handleClick}>
@@ -91,13 +93,13 @@ const Sidebar = () => {
                     </li>
                 ))}
                 </ul>
-            </div>
+            </div> */}
             {/* END MENU */}
 
-            <CopyRight />
+            {/* <CopyRight /> */}
             {/* END COPYRIGHT */}
-            </div>
-        </div>
+            {/* </div>
+        </div> */}
         {/* END LEFT MENU CONTENT */}
         </>
     );
