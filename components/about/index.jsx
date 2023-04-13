@@ -36,7 +36,7 @@ const AboutMain = () => {
             <div className="tokyo_tm_button"
                 // data-position="left"
             >
-                <a href="/"  >
+               
                 <Link
                     // className={`${
                     //     isActiveLink(item.routePath, router.asPath)
@@ -47,7 +47,6 @@ const AboutMain = () => {
                 >
                 <span>Formularz kontaktowy</span>
                 </Link>
-                </a>
             </div>
           {/* </div> */}
         </div>
