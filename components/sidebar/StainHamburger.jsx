@@ -21,9 +21,9 @@ const StainHamburger = () => {
         <input class="menu-icon" type="checkbox" id="menu-icon" name="menu-icon"/>
             <label for="menu-icon"></label>
             <nav class="nav"> 	
-                <ul class="pt-5">
+                <ul className="pt-5 ulMenuList">
                    {sidebarData.map((item) => (
-                    <li key={item.id} onClick={handleClick}>
+                    <li key={item.id}  className="liMenuItem" onClick={handleClick}>
                     <Link
                         className={`${
                             isActiveLink(item.routePath, router.asPath)

@@ -3,6 +3,7 @@ import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Map from "../Map";
+import ContactFormIntro from "./ContactFormIntro";
 
 const Contact = () => {
   const form = useRef();
@@ -51,14 +52,15 @@ const Contact = () => {
             <div className="title_flex">
               <div className="left">
                 <span>Contact</span>
-                <h3>Get in Touch</h3>
+                {/* <h3>Get in Touch</h3> */}
               </div>
             </div>
           </div>
+          {/* <Map /> */}
           {/* END TITLE */}
 
-          <Map />
           {/* MENU WRAP */}
+          <ContactFormIntro >
 
           <div className="fields">
             <form
@@ -66,16 +68,16 @@ const Contact = () => {
               id="myForm"
               ref={form}
               onSubmit={sendEmail}
-            >
+              >
               <div className="first">
                 <ul>
                   <li>
                     <input
                       type="text"
                       name="name"
-                      placeholder="Name"
+                      placeholder="Imię"
                       required
-                    />
+                      />
                   </li>
                   {/* END FIRST NAME */}
 
@@ -83,31 +85,32 @@ const Contact = () => {
                     <input
                       type="email"
                       name="user_email"
-                      placeholder="Email"
+                      placeholder="Adres email"
                       required
-                    />
+                      />
                   </li>
                   {/* END EMAIL */}
 
                   <li>
                     <textarea
                       name="message"
-                      placeholder="Message"
+                      placeholder="Napisz wiadomość..."
                       required
-                    ></textarea>
+                      ></textarea>
                   </li>
                   {/* END SUBJECT MESSAGE */}
                 </ul>
               </div>
               <div className="tokyo_tm_button">
                 <button type="submit" className="ib-button">
-                  Send Message
+                  Wyślij wiadomość
                 </button>
               </div>
               {/* END SUBMIT BUTTON */}
             </form>
             {/* END FORM */}
           </div>
+                      </ContactFormIntro>
           {/* END FIELDS */}
         </div>
       </div>

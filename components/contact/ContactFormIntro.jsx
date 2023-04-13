@@ -1,10 +1,10 @@
 import React from "react";
 
-const Intro = ({children}) => {
-  const introContent = {
-    image: "/img/slider/1.jpg",
-    name: "Jacek Gonera",
-    designation: "Architekt wnętrz",
+const ContactFormIntro = ({children}) => {
+  const introContentForm = {
+    name: "GONERA DESIGN",
+    subname: "by Jacek Gonera",
+    designation: "Formularz kontaktowy",
     text: (
       <> 
         <em>         {/*  //BUG poprawić to  */}
@@ -30,14 +30,15 @@ const Intro = ({children}) => {
       </div> */}
     <div className="tokyo_tm_about">
         <div className="about_title">
-            <h3>{introContent.name}</h3>
-            <span>{introContent.designation}</span>
+            <h4>{introContentForm.name}</h4>
+            <h3>{introContentForm.subname}</h3>
         </div>
-        <div className="about_text">{introContent.text}</div>
+            <span>{introContentForm.designation}</span>
+        {/* <div className="about_text">{introContentForm.text}</div> */}
         {children ? children : ""}
     </div>
     </>
   );
 };
 
-export default Intro;
+export default ContactFormIntro;

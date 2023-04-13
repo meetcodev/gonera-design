@@ -273,9 +273,9 @@ h6 {
   max-width: 150px;
 }
 .tokyo_tm_all_wrap .leftpart .menu {
-  padding: 40px 0px 50px 0px;
-  width: 100%;
-  float: left;
+//   padding: 40px 0px 50px 0px;
+//   width: 100%;
+//   float: left;
 }
 .tokyo_tm_all_wrap .leftpart .menu ul {
   margin: 0px;
@@ -516,7 +516,7 @@ box-shadow: inset 0px 0px 0px 7px rgba(8, 15, 109, .8);
   height: auto;
   clear: both;
   float: left;
-  padding: 100px 0px 100px 0px;
+  padding: 5%;
 }
 .tokyo_tm_about .about_image {
   width: 100%;
@@ -807,7 +807,7 @@ box-shadow: inset 0px 0px 0px 7px rgba(8, 15, 109, .8);
   height: auto;
   clear: both;
   float: left;
-  margin-bottom: 62px;
+//   margin-bottom: 62px;
 }
 .tokyo_tm_title h3 {
   font-weight: 800;
@@ -1596,14 +1596,14 @@ body.modal {
   }
 
   .tokyo_tm_about,
-  .tokyo_tm_home,
   .tokyo_tm_portfolio,
   .tokyo_tm_contact,
   .tokyo_tm_news {
-    padding-top: 140px;
+    padding-top: 5%;
+    // padding-top: 140px;
   }
   .tokyo_tm_home {
-    padding-bottom: 120px;
+     padding-top: 140px;
   }
   .tokyo_tm_modalbox_news .close a {
     color: #000;
@@ -1862,7 +1862,12 @@ body.modal {
     padding-bottom: 95px;
   }
   .tokyo_tm_home {
-    padding-bottom: 90px;
+    // padding-bottom: 90px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     min-height: auto;
   }
 }

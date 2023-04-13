@@ -24,8 +24,8 @@ const Home = () => {
               <Typed
                 strings={[
                   "Architekt Wnętrz",
-                  "ARCHITEKT WNĘTRZ",
-                  "Photographer", 
+                  "Projekty...",
+                  "Projekty łazienek 🙈", 
                 ]}
                 loop
                 typeSpeed={80}
