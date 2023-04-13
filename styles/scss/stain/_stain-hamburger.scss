@@ -96,7 +96,9 @@
   z-index: 9;
   overflow: hidden;
   box-shadow: 0 8px 30px 0 rgba(0,0,0,0.3);
-  background-color: #353746;
+//   background-color: #353746;
+  background-color: #29292e;
+//   background-color: #71797E;
   animation: border-transform 7s linear infinite;
   transition: top 350ms 1100ms cubic-bezier(0.23, 1, 0.32, 1),  
               right 350ms 1100ms cubic-bezier(0.23, 1, 0.32, 1),
@@ -140,6 +142,7 @@
   text-align: center;
   transform: translateY(-50%);
   list-style: none;
+
 }
 .nav ul li{
   position: relative;
@@ -154,6 +157,7 @@
   visibility: hidden;
   transform: translateY(30px);
   transition: all 250ms linear;
+
 }
 .nav ul li:nth-child(1){
   transition-delay: 200ms;
@@ -176,26 +180,36 @@
   display: inline-block;
   position: relative;
   color: #ececee;
+//   color: #f8f8f8;
   transition: all 250ms linear;
+  text-decoration: none;
+  opacity: .6;
 }
 .nav ul li a:hover{
-  text-decoration: none;
-  color: #ffeba7;
+    //   color: #ffeba7;
+    color: #ececee;
+    // color: #080f6d;
+    opacity: 1;
+
 }
 .nav ul li a:after{
-  display: block;
-  position: absolute;
-  top: 50%;
-  content: '';
-  height: 2vh;
-  margin-top: -1vh;
-  width: 0;
+    display: block;
+    position: absolute;
+    z-index: -1;
+    top: 57%;
+    content: '';
+    height: 1vh;
+    margin-top: 4vh;
+    width: 0px;
   left: 0;
-  background-color: #353746;
+  //   background-color: #353746;
+  background-color: #080f6d;
   opacity: 0.8;
   transition: width 250ms linear;
+  color: #ececee;
 }
 .nav ul li a:hover:after{
+    text-decoration-style: wavy;
   width: 100%;
 }
 

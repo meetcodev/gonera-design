@@ -67,6 +67,7 @@ const Sidebar = () => {
             {/* END LOGO */}
 
             <div className="menu">
+            {/* <div className="nav"> */}
                 <ul>
                 {sidebarData.map((item) => (
                     <li key={item.id} onClick={handleClick}>

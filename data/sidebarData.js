@@ -11,24 +11,24 @@ module.exports = [
     menuName: "About",
     routePath: "/about",
   },
-  {
-    id: 3,
-    icon: "/img/svg/setting.svg",
-    menuName: "Service",
-    routePath: "/service",
-  },
+//   {
+//     id: 3,
+//     icon: "/img/svg/setting.svg",
+//     menuName: "Service",
+//     routePath: "/service",
+//   },
   {
     id: 4,
     icon: "/img/svg/briefcase.svg",
     menuName: "Portfolio",
     routePath: "/portfolio",
   },
-  {
-    id: 5,
-    icon: "/img/svg/paper.svg",
-    menuName: "News",
-    routePath: "/news",
-  },
+//   {
+//     id: 5,
+//     icon: "/img/svg/paper.svg",
+//     menuName: "News",
+//     routePath: "/news",
+//   },
   {
     id: 6,
     icon: "/img/svg/mail.svg",
