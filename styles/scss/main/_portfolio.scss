@@ -1,0 +1,29 @@
+.wrapper_title_portfolio .portfolio_title {
+    width: 100%;
+    height: auto;
+    clear: both;
+    float: left;
+    border-bottom: 1px solid #dfdfdf;
+    padding-bottom: 20px;
+    margin-bottom: 27px;
+}
+.wrapper_title_portfolio .portfolio_title h3 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+
+@media screen and (max-width: 450px) {
+    .wrapper_title_portfolio { 
+        padding-bottom: 15px;
+        margin-bottom: 17px;
+        .portfolio_title h3 {
+            font-size: 20px;
+            font-weight: 700;
+        }
+        .portfolio_title h4 {
+            font-size: 20px;
+        }
+    }
+}
+

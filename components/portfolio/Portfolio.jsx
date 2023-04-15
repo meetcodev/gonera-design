@@ -38,15 +38,21 @@ const Portfolio = () => {
 
   return (
     <>
+        <div className="wrapper_title_portfolio">
+            <div className="portfolio_title">
+                <h3>Interior designs</h3>
+                <h4>by Jacek Gonera</h4>
+            </div>
+        </div>
       <Gallery>
         <Tabs>
           {/* START FILTER TABLIST */}
-          <TabList>
+          {/* <TabList>
             <Tab>All</Tab>
             <Tab>Videos</Tab>
             <Tab>Photography</Tab>
             <Tab>Details</Tab>
-          </TabList>
+          </TabList> */}
           {/* END FILTER TABLIST */}
 
           <div className="list_wrapper">

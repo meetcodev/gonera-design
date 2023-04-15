@@ -20,7 +20,7 @@ const StainHamburger = () => {
         <>
         <input class="menu-icon" type="checkbox" id="menu-icon" name="menu-icon"/>
             <label for="menu-icon"></label>
-            <nav class="nav"> 	
+            <nav class="nav" id="stain-hamburger--nav"> 	
                 <ul className="pt-5 ulMenuList">
                    {sidebarData.map((item) => (
                     <li key={item.id}  className="liMenuItem" onClick={handleClick}>

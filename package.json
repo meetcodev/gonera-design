@@ -2,12 +2,12 @@
   "name": "tokyo-nextjs",
   "version": "0.1.0",
   "private": true,
-  
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "deploy": "next build && next export"
   },
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
@@ -15,6 +15,7 @@
     "aos": "^2.3.4",
     "eslint": "8.31.0",
     "eslint-config-next": "13.1.1",
+    "ftp-deploy": "^2.4.3",
     "next": "13.1.1",
     "next-share": "^0.19.0",
     "next-themes": "^0.2.1",

@@ -30,24 +30,24 @@ const AboutMain = () => {
           <div className="tokyo_tm_short_info">
             <PersonalInfo />
           </div>
-          </Intro>
           {/* End personal info */}
         {/* <div className="tokyo_tm_button--wrapper" > */}
             <div className="tokyo_tm_button"
                 // data-position="left"
-            >
+                >
                
                 <Link
                     // className={`${
-                    //     isActiveLink(item.routePath, router.asPath)
-                    //     ? "active "
-                    //     : ""
-                    // }`}
-                    href="/contact"
-                >
+                        //     isActiveLink(item.routePath, router.asPath)
+                        //     ? "active "
+                        //     : ""
+                        // }`}
+                        href="/contact"
+                        >
                 <span>Formularz kontaktowy</span>
                 </Link>
             </div>
+                    </Intro>
           {/* </div> */}
         </div>
       </div>

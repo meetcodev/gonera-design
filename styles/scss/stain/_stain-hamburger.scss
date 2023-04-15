@@ -198,7 +198,7 @@
     display: block;
     position: absolute;
     z-index: -1;
-    top: 57%;
+    top: 5vh;
     content: '';
     height: 1vh;
     margin-top: 4vh;
@@ -278,21 +278,105 @@
   .nav ul li a{
     font-size: 7vh;
   }
+
+  .nav ul li a:after{
+    top: 4vh;
+  }
 }
 @media screen and (max-width: 600px) {
+    // .nav {
+    //     width: 60px;
+    //     height: 60px;
+    // }
+    
+    .menu-icon:checked + label,
+    .menu-icon:not(:checked) + label{
+        top: 55px;
+        right: 50px;
+        width: 25px;
+        height: 25px;  
+        padding: 0;
+        margin: 0;
+        cursor: pointer;
+        z-index: 1000;
+    }
+
+    .menu-icon:checked + label:before,
+    .menu-icon:not(:checked) + label:before{
+        width: 25px;
+        height: 18px;
+        border-top: 2px solid #ececee;
+        border-bottom: 2px solid #ececee;
+        transition: border-width 100ms 1500ms ease, 
+                    top 100ms 1600ms cubic-bezier(0.23, 1, 0.32, 1),
+                    height 100ms 1600ms cubic-bezier(0.23, 1, 0.32, 1), 
+                    background-color 200ms ease,
+                    transform 200ms cubic-bezier(0.23, 1, 0.32, 1);
+        
+    }   
+    .menu-icon:checked + label:after,
+    .menu-icon:not(:checked) + label:after{
+        width: 20px;
+        height: 2px;
+        top: 10px;
+        right: 3px;
+        margin-top: -1px;
+          transition: width 100ms 1750ms ease, 
+              right 100ms 1750ms ease,
+              margin-top 100ms ease, 
+              transform 200ms cubic-bezier(0.23, 1, 0.32, 1);
+    }   
+    .menu-icon:checked + label:before{
+        top: 10px;
+        transform: rotate(45deg);
+        height: 2px;
+        background-color: #ececee;
+        border-width: 0;
+        transition: border-width 100ms 340ms ease, 
+                    top 100ms 300ms cubic-bezier(0.23, 1, 0.32, 1),
+                    height 100ms 300ms cubic-bezier(0.23, 1, 0.32, 1), 
+                    background-color 200ms 500ms ease,
+                    transform 200ms 1700ms cubic-bezier(0.23, 1, 0.32, 1);
+    }   
+    .menu-icon:checked + label:after{
+        width: 25px;
+        margin-top: 0;
+        right: 0;
+        transform: rotate(-45deg);
+        transition: width 100ms ease,
+                    right 100ms ease,  
+                    margin-top 100ms 500ms ease, 
+                    transform 200ms 1700ms cubic-bezier(0.23, 1, 0.32, 1)
+    }
+    .nav {
+        width: 60px;
+        height: 60px;
+    }
+
     .nav ul li a{
         font-size: 6vh;
       } 
+    .nav ul li a:after{
+        top: 3vh;
+      }
 }
 @media screen and (max-width: 450px) {
     .nav ul li a{
         font-size: 5vh;
       } 
+      .nav ul li a:after{
+        top: 2vh;
+        height: .9vh;
+      }
 }
 @media screen and (max-width: 350px) {
     .nav ul li a{
         font-size: 4vh;
       } 
+      .nav ul li a:after{
+        top: .8vh;
+        height: .8vh;
+      }
 }
 
 
