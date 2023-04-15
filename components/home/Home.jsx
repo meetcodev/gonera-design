@@ -21,7 +21,7 @@ const Home = () => {
             <div className="details">
                 <h3 className="name">Jacek Gonera</h3>
                 <h4 className="typer">
-                    Architekt wnętrz
+                    ARCHITEKT WNĘTRZ
                 {/* <Typed
                     strings={[
                     "Architekt Wnętrz",
@@ -34,8 +34,9 @@ const Home = () => {
                 </h4>
 
                 <p className="job">
-                    Tworzę wnętrza w których czujesz się Szczęśliwy! 
+                    GONERA DESIGN
                 </p>
+                
                 {/* END JOB */}
                 <Social />
             </div>

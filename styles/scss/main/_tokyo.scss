@@ -461,16 +461,18 @@ box-shadow: inset 0px 0px 0px 7px rgba(8, 15, 109, .8);
   margin-left: 80px;
 }
 .tokyo_tm_home .details .name {
-  font-size: 48px;
+  font-size: 44px;
   font-weight: 800;
   text-transform: uppercase;
   margin-bottom: 15px;
 }
 .tokyo_tm_home .details .typer {
   margin-bottom: 15px;
+  font-size: 27px;
 }
 .tokyo_tm_home .details .job {
   font-family: "Montserrat";
+  font-size: 20px;
   font-weight: 500;
   max-width: 450px;
   margin-bottom: 20px;
@@ -1599,9 +1601,6 @@ body.modal {
     padding-top: 5%;
     // padding-top: 140px;
   }
-  .tokyo_tm_home {
-     padding-top: 140px;
-  }
   .tokyo_tm_modalbox_news .close a {
     color: #000;
   }
@@ -1640,6 +1639,9 @@ body.modal {
   }
   .tokyo_tm_mobile_menu .menu_inner {
     padding: 20px;
+  }
+  .tokyo_tm_home {
+        padding-top: 100px;
   }
   .tokyo_tm_home .home_content {
     flex-direction: column;
@@ -1733,6 +1735,15 @@ body.modal {
   .tokyo_tm_home .details .name {
     font-size: 35px;
   }
+  .tokyo_tm_home .details .typer {
+    font-size: 22px;
+  }
+  .tokyo_tm_home .details .job {
+    font-size: 18px;
+  }
+
+
+
   .tokyo_tm_modalbox_news .description_wrap .image {
     height: 280px;
   }
@@ -1859,7 +1870,7 @@ body.modal {
     padding-bottom: 95px;
   }
   .tokyo_tm_home {
-    // padding-bottom: 90px;
+    padding-top: 140px;
     
     display: flex;
     align-items: center;

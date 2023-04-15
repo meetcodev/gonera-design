@@ -21,7 +21,8 @@ export default function App({ Component, pageProps }) {
   return (
     <div className="tokyo_tm_all_wrap">
       <ThemeProvider attribute="class">
-        {router.asPath !== "/" ? <ThemeSwitch /> : ""}
+        {/* {router.asPath !== "/" ? <ThemeSwitch /> : ""} */}
+        <ThemeSwitch />
         {/* End themeSwicher */}
         <Component {...pageProps} />
         {/* Main next component pageprops */}

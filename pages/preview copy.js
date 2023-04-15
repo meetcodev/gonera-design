@@ -37,12 +37,13 @@ const Preview = () => {
     },
   ];
 
-  const { theme, setTheme } = useTheme(2);
+  const { theme, setTheme } = useTheme();
 
   // toggle of dark & light mode
   const handle = (e) => {
     setTheme(e);
   };
+
   return (
     <>
       <Seo pageTitle="Preview" />

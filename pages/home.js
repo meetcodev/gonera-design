@@ -5,7 +5,8 @@ import Sidebar from "../components/sidebar/Sidebar";
 const index = () => {
     return (
         <>
-        <Seo pageTitle="Home" />
+        {/* <Seo pageTitle="Home" /> */}
+        <Seo pageTitle="" />
         {/* En Seo Page Title */}
 
         <Sidebar />
