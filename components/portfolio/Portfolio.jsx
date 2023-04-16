@@ -8,11 +8,6 @@ import dynamic from "next/dynamic";
 import Image from "next/image";
 import ModalOne from "./modal/ModalOne";
 import ModalTwo from "./modal/ModalTwo";
-import SimpleSlider2 from "./Slider2";
-import OldPortfolio from "./old/PortfolioCreative";
-import TestProjectGalleryItem from "./old/TestProjectGalleryItem";
-import TestProjectGalleryItem2 from "./old/TestProjectGalleryItem2";
-import TestProjectGalleryItem3 from "./old/TestProjectGalleryItem3";
 import ProjectGallery from "./projects/ProjectGallery";
 
 Modal.setAppElement("#__next");
@@ -20,17 +15,6 @@ Modal.setAppElement("#__next");
 const ReactTooltip = dynamic(() => import("react-tooltip"), {
   ssr: false,
 });
-
-
-
-
-const projectGallertItem2 = () => (<TestProjectGalleryItem />);
-
-
-
-
-
-
 
 
 
@@ -58,44 +42,6 @@ const Portfolio = () => {
 
 
 
-
-  const htmlString = (val) =>   `
-  <div style="
-    color: white;
-    display: flex;
-    place-content: center;
-    flex-direction: column;
-    height: 100%;
-    text-align: center;
-  ">
-      <Image
-  width={300}
-  height={300}
-  srl_gallery_image="true"
-  src="/img/portfolio/portfolio/6.jpg"
-  alt="Childhood6"
-  data-tip
-  data-for="shot"
-  />
-  </div> 
- ` ;
-
-  const htmlString2 = (val) =>   `
-  <div style="
-    color: white;
-    display: flex;
-    place-content: center;
-    flex-direction: column;
-    height: 100%;
-    text-align: center;
-  ">
-  <OldPortfolio />
-  </div> 
- ` ;
-
-
-
-
  return (
      <>
                 {/* <OldPortfolio /> */}
@@ -105,9 +51,6 @@ const Portfolio = () => {
                 <h4>by Jacek Gonera</h4>
             </div>
         </div>
-        <hr/> 
-
-     <TestProjectGalleryItem3  src="/img/portfolio/portfolio/5.jpg" />
       {/* <Gallery> */}
         <Tabs>
           {/* START FILTER TABLIST */}
@@ -295,33 +238,6 @@ const Portfolio = () => {
                   </div>
                 </li>
                 {/* MY TEST PROJECT GALERY 3 */}
-                <li>
-                  <div className="inner">
-                    <div className="entry tokyo_tm_portfolio_animation_wrap">
-                        <TestProjectGalleryItem3  src="/img/portfolio/portfolio/7.jpg" />
-
-                      <ReactTooltip
-                        id="detail"
-                        place="bottom"
-                        type="light"
-                        effect="float"
-                        className="tooltip-wrapper"
-                      >
-                        <div>
-                          <h5>Selena Gomez</h5>
-                          <span>Details</span>
-                        </div>
-                      </ReactTooltip>
-                    </div>
-                  </div>
-                </li>
-                {/* MY TEST PROJECT GALERY 3 */}
-
-
-
-
-
-
                 <li>
                   <div className="inner">
                     <div className="entry tokyo_tm_portfolio_animation_wrap">
