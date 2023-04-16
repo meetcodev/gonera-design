@@ -1,9 +1,4 @@
-// import Image from "next/image";
 import Link from "next/link";
-// import sidebarData from "../../data/sidebarData";
-// import CopyRight from "../CopyRight";
-// import { isActiveLink } from "../../utilis/linkActiveChecker";
-// import { useRouter } from "next/router";
 import Image from "next/image";
 import sidebarData from "@/data/sidebarData";
 import { useState } from "react";

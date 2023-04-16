@@ -2,10 +2,10 @@ import React  from "react";
 import Image from "next/image";
 import { Item } from "react-photoswipe-gallery";
 
-function ProjectImageViewer({ images, imgWidth, imgHeight }) {
+function ProjectImageViewer({ images, imgWidth, imgHeight, projectImages }) {
 
 
-    
+    console.log("projectImages", projectImages);
 
         return (
             <>

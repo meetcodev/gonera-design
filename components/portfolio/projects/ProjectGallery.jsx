@@ -1,11 +1,8 @@
 import React, { useState, useCallback } from "react";
-
-// import ImageViewer from "react-simple-image-viewer";
-// import "../Album.css";
 import Image from "next/image";
 import { Item, Gallery } from "react-photoswipe-gallery";
 import ProjectImageViewer from "./ProjectImageViewer";
-
+import dynamic from "next/dynamic";
 // const options = {
 //   dataSource: [
 
@@ -44,13 +41,16 @@ import ProjectImageViewer from "./ProjectImageViewer";
 // };
 
 
+const ReactTooltip = dynamic(() => import("react-tooltip"), {
+    ssr: false,
+});
 
 
 
 
 const images = [ 
     {
-        src: '/img/portfolio/portfolio/photos-optimal/1/1.jpg',
+        src: '/img/portfolio/portfolio/photos-optimal/XX',
         width: 1950,
         height: 1300,
         alt: 'test image 2'
@@ -76,17 +76,15 @@ const images = [
        const img_width = 860;
        const img_height = 620;
        
-       function ProjectGallery({   thumbnailSrc,  src }) {
-
-
- 
+       function ProjectGallery({ children,  thumbnailSrc,  tooltipId, projectImages }) {
+        console.info("projectImages🔰", projectImages);
         return (
             <div //style={{ width: "300px", }}
             >
             <Gallery style={{ display: "flex", alignItems: "center" }}>
                 <Item
-                    original={images[0]['src']}
-                    // thumbnail="https://cdn.pixabay.com/photo/2022/06/22/18/28/deer-7278490_960_720.jpg"
+                    original={thumbnailSrc}
+                    thumbnail={thumbnailSrc}
                     width={img_width}
                     height={img_height}
                 >
@@ -96,11 +94,9 @@ const images = [
                         height={500}
                         srl_gallery_image="true"
                         src={thumbnailSrc}
-                        // src="https://placekitten.com/80/60?image=2"
-                        // src={options.dataSource[0]['src']}
                         alt="Childhood232"
                         data-tip
-                        data-for="sarna"
+                        data-for={tooltipId}
                         role="button"
                         ref={ref}
                         onClick={open}
@@ -110,9 +106,52 @@ const images = [
                     />
                 )}
                 </Item>
-                
+                {children ? children : "" }
+               
                 {/* Thumbnail END */}
-                        <ProjectImageViewer images={images} imgHeight={img_height} imgWidth={img_width} />
+                        {/* <ProjectImageViewer images={projectImages} imgHeight={img_height} imgWidth={img_width} /> */}
+                <>
+                { projectImages?.length ? (
+                    
+                projectImages.map(({src}, index) => {
+
+                        if(index === 0) return "";
+                        return(
+                            <Item
+                                original={src}
+                                // thumbnail={src}
+                                // width="1024"  height="768"
+                                width={img_width}
+                                height={img_height}
+                                key={`item_${+index+1}`}
+                                >
+                                {({ ref, open }) => (
+                                    <Image
+                                    
+                                    ref={ref}
+                                    onClick={open}
+                                    src={src}
+                                    // width={"imgWidth"}
+                                    // height={imgHeight}
+                                        // key={`img_${index}`}
+                                        layout="fill"
+                                        sizes="(max-width: 768px) 100vw,
+                                        (max-width: 1200px) 50vw,
+                                        33vw"
+                                        
+                                    style={{ display: "none"  }}
+
+                                        />
+                                        )}
+                                </Item>
+                            );}
+                            )
+                    ) : "" }
+
+
+
+
+                    </>
             </Gallery>
             </div>
         );
