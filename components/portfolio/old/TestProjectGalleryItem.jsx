@@ -29,7 +29,7 @@ function TestProjectGalleryItem({ isOpenProjectGallery }) {
             <Item >
         {images.map((src, index) => (
             <div className="collumn">
-            <img
+            <img 
                 src={src}
                 onClick={() => openImageViewer(index)}
                 width="auto"

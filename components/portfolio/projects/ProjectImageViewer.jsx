@@ -90,13 +90,21 @@ function ProjectImageViewer({ images, imgWidth, imgHeight }) {
                                 height={imgHeight}
                                 >
                                 {({ ref, open }) => (
-                                    <img
-                                        style={{ display: "none", border: "2px white solid" }}
-                                        ref={ref}
-                                        onClick={open}
-                                        src={src}
-                                        width="auto"
+                                    <Image
+                                    
+                                    ref={ref}
+                                    onClick={open}
+                                    src={src}
+                                    // width={"imgWidth"}
+                                    // height={imgHeight}
                                         key={index}
+                                        layout="fill"
+                                        sizes="(max-width: 768px) 100vw,
+                                        (max-width: 1200px) 50vw,
+                                        33vw"
+                                        
+                                    style={{ display: "none"  }}
+
                                         />
                                         )}
                             </Item>

@@ -60,12 +60,6 @@ const images = [
         alt: 'test image 2'
     }, 
     {
-        src: '/img/portfolio/portfolio/photos-optimal/1/2.jpg',
-        width: 1950,
-        height: 1300,
-        alt: 'test image 3'
-    }, 
-    {
         src: '/img/portfolio/portfolio/photos-optimal/1/3.jpg',
         width: 1950,
         height: 1300,
@@ -81,12 +75,12 @@ const images = [
 
 
        // width="1024"  height="768"
-const img_width = 860;
-const img_height = 620;
-
-
-
-function ProjectGallery({   thumbnailSrc,  src }) {
+       
+       
+       const img_width = 860;
+       const img_height = 620;
+       
+       function ProjectGallery({   thumbnailSrc,  src }) {
 
 
  
