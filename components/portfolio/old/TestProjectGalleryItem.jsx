@@ -28,12 +28,13 @@ function TestProjectGalleryItem({ isOpenProjectGallery }) {
         <div className="row">
             <Item >
         {images.map((src, index) => (
-            <div className="collumn">
+            <div className="collumn"
+                key={index}
+            >
             <img 
                 src={src}
                 onClick={() => openImageViewer(index)}
                 width="auto"
-                key={index}
                 style={{ margin: "2px" }}
                 alt=""
             />

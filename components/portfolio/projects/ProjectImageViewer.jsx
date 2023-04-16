@@ -88,6 +88,7 @@ function ProjectImageViewer({ images, imgWidth, imgHeight }) {
                                 // width="1024"  height="768"
                                 width={imgWidth}
                                 height={imgHeight}
+                                key={`item_${index}`}
                                 >
                                 {({ ref, open }) => (
                                     <Image
@@ -97,7 +98,7 @@ function ProjectImageViewer({ images, imgWidth, imgHeight }) {
                                     src={src}
                                     // width={"imgWidth"}
                                     // height={imgHeight}
-                                        key={index}
+                                        key={`img_${index}`}
                                         layout="fill"
                                         sizes="(max-width: 768px) 100vw,
                                         (max-width: 1200px) 50vw,
