@@ -33,6 +33,7 @@
     "react-tooltip": "^4.2.21",
     "react-typed": "^1.2.0",
     "sass": "^1.57.1",
+    "simple-react-lightbox": "3.6.6",
     "slick-carousel": "^1.8.1"
   }
 }

@@ -39,12 +39,7 @@
 //         },
 //       ];
     
-//       const { theme, setTheme } = useTheme();
-    
-//       // toggle of dark & light mode
-//       const handle = (e) => {
-//         setTheme(e);
-//       };
+   
 
 
 // return(
@@ -56,19 +51,15 @@
 //                 <div className="container">
 //             <Slider {...settings}>
 //             {demoItems.map((item) => {
-//                 const mode = item.id % 2 === 0 ? "dark" : "light";
 //                 return (
 //                 <div
 //                     className="left"
 //                     key={item.id}
-//                     onClick={() => handle(mode)}
 //                     >
-//                     <Link href="/home">
 //                     <div className="desc">
 //                         <img src={item.img} alt="demo item" />
 //                         <h3 className="title">{item.title}</h3>
 //                     </div>
-//                     </Link>
 //                 </div>
 //                 );
 //             })}
