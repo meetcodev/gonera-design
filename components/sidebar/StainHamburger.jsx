@@ -32,16 +32,14 @@ const StainHamburger = () => {
             if(event){
                 setTimeout(() => {
                     router.push(myHref);
-                },675);
+                }, 800);
             }
         }
-        // finally {
-        //     console.log('posłoe');
-        // }
+        finally {  console.log('posłoe'); }
+        
       };
 
 
-      console.log('checked:', checked);
     return(
         <>
         <input class="menu-icon" key={checkedKey} onClick={() => setChecked(!checked)} value={checked} type="checkbox" id="menu-icon" name="menu-icon"/>
