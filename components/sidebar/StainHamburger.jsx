@@ -32,7 +32,7 @@ const StainHamburger = () => {
             if(event){
                 setTimeout(() => {
                     router.push(myHref);
-                }, 1000);
+                }, 1500);
             }
         }
         finally {  console.log('posłoe'); }
