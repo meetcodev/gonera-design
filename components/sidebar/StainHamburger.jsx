@@ -36,7 +36,7 @@ const StainHamburger = () => {
                     // handleClick();
                     console.log('href', myHref);
                     router.push(myHref);
-                },525);
+                },575);
             // }
         // }
         // finally {
