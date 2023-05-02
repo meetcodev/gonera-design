@@ -28,17 +28,13 @@ const StainHamburger = () => {
         const myHref = `${event.target.value }`;
         setChecked(!checked);
         setCheckedKey(!checkedKey);
-        console.log('event', event.target.value  );
-        // try {
-        //     if(event){
+        try {
+            if(event){
                 setTimeout(() => {
-                    console.log('click');
-                    // handleClick();
-                    console.log('href', myHref);
                     router.push(myHref);
                 },575);
-            // }
-        // }
+            }
+        }
         // finally {
         //     console.log('posłoe');
         // }
