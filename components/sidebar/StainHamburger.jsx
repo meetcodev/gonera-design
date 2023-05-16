@@ -27,12 +27,12 @@ const StainHamburger = () => {
         event.preventDefault();
         const myHref = `${event.target.value }`;
         setChecked(!checked);
-        setCheckedKey(!checkedKey);
+        // setCheckedKey(!checkedKey);
         try {
             if(event){
                 setTimeout(() => {
                     router.push(myHref);
-                }, 1500);
+                }, 1800);
             }
         }
         finally {  console.log('posłoe'); }
@@ -47,16 +47,19 @@ const StainHamburger = () => {
             <nav class="nav" id="stain-hamburger--nav"> 	
                 <ul className="pt-5 ulMenuList">
                     {sidebarData.map((item) => (
-                        <li key={item.id}  className="liMenuItem" onClick={delayCSS}  
+                        <li key={item.id}  className="liMenuItem"   
                             style={{ display: ((item.routePath === router.asPath) || ( item.routePath === "/home" ) && (router.asPath === "/")) ? 'none' : "" }}
                         >
                         <Link   
                             onClick={ (event) => delayCSS(event)}
-                            className={`${
-                                isActiveLink(item.routePath, router.asPath)
-                                ? "active "
-                                : ""
-                            }`}
+                            
+                            // Om może trzeba właczyć
+                            // className={`${
+                            //     isActiveLink(item.routePath, router.asPath)
+                            //     ? "active"
+                            //     : ""
+                            // }`}
+
                             // style={{isActiveLink(item.routePath, router.asPath) ? }}
                             // {router.asPath !== "/portfolio" ? <ThemeSwitch /> : ""}
                             href={item.routePath}

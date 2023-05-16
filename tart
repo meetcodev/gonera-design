@@ -1,0 +1,155 @@
+[33mcommit f6daaa5fdcd01b6c5ac4c48e0cf64ac57e28398d[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: Marek Mitko <mitko.email@gmail.com>
+Date:   Tue May 2 15:14:05 2023 +0200
+
+    ok
+
+[33mcommit 62b2b1cbe360ffd356433d092464833f2954a042[m[33m ([m[1;31morigin/main[m[33m)[m
+Author: Marek Mitko <mitko.email@gmail.com>
+Date:   Tue May 2 14:13:35 2023 +0200
+
+    fixed6
+
+[33mcommit 1f671359690860a7e340a522c11651b78f324d63[m
+Author: Marek Mitko <mitko.email@gmail.com>
+Date:   Tue May 2 14:04:47 2023 +0200
+
+    fixed5
+
+[33mcommit f5855a24f8875f5bab12a8088c4e9a866640bffd[m
+Author: Marek Mitko <mitko.email@gmail.com>
+Date:   Tue May 2 14:02:28 2023 +0200
+
+    fix(Navbar): fixed animation3
+
+[33mcommit e82248d9571fbfa164ce2467bbc5d2438e623361[m
+Author: Marek Mitko <mitko.email@gmail.com>
+Date:   Tue May 2 13:58:36 2023 +0200
+
+    fix(Navbar): fixed animation2
+
+[33mcommit a8907eac1860fcedc118896d51d3ecdec280c438[m
+Author: Marek Mitko <mitko.email@gmail.com>
+Date:   Tue May 2 13:55:23 2023 +0200
+
+    fix(Navbar): fixed animation
+
+[33mcommit cdacc6795e20889c505aa7c07afe4db80d4e8d8f[m
+Author: Marek Mitko <mitko.email@gmail.com>
+Date:   Tue May 2 13:04:53 2023 +0200
+
+    fix(Navbar): added animation click navigation
+
+[33mcommit 0c4b63022897da1715ada682536790ed9da9b8fc[m
+Author: Marek Mitko <mitko.email@gmail.com>
+Date:   Sun Apr 16 21:10:31 2023 +0200
+
+    feat(ProjectItemIterator): Added All Projects
+
+[33mcommit 8cbaa4c96de838d6a38abb52a852be5ead7fc68f[m
+Author: Marek Mitko <mitko.email@gmail.com>
+Date:   Sun Apr 16 18:04:40 2023 +0200
+
+    feat(StainHamburger): Hide active path
+
+[33mcommit 942ece687261426caf44c6c3c290bfb5760240cb[m
+Author: Marek Mitko <mitko.email@gmail.com>
+Date:   Sun Apr 16 15:59:19 2023 +0200
+
+    refactoring4
+
+[33mcommit 7e29f89bb7dbed109d65b7d0647bef563edf343d[m
+Author: Marek Mitko <mitko.email@gmail.com>
+Date:   Sun Apr 16 15:44:21 2023 +0200
+
+    refactoring2
+
+[33mcommit efd4d98b79480cfb7ae4381451f59f87cde0eef7[m
+Author: Marek Mitko <mitko.email@gmail.com>
+Date:   Sun Apr 16 15:39:22 2023 +0200
+
+    refactoring
+
+[33mcommit 6c12ad07ef48866df7385aac48102f27505ab81d[m
+Author: Marek Mitko <mitko.email@gmail.com>
+Date:   Sun Apr 16 15:05:05 2023 +0200
+
+    feat(ProjectGallerty): Item componets to portfolio pages
+
+[33mcommit 24b0ac7b0f13f64728d05f8c26185726adc5aba6[m
+Author: Marek Mitko <mitko.email@gmail.com>
+Date:   Sat Apr 15 19:23:17 2023 +0200
+
+    refactoring4
+
+[33mcommit 9db3445c80366a362e8f231affbd98956980beb9[m
+Author: Marek Mitko <mitko.email@gmail.com>
+Date:   Sat Apr 15 18:30:05 2023 +0200
+
+    refactoring
+
+[33mcommit 08a610b591a807cebb6bb8a4f2077bd6f43577a3[m
+Author: Marek Mitko <mitko.email@gmail.com>
+Date:   Sat Apr 15 17:05:35 2023 +0200
+
+    feat(StainHamburger) Responsive StainHamburger to navbar
+
+[33mcommit e227bbd3535cc89e81af69b5a10879781fe2a0b6[m
+Author: Marek Mitko <mitko.email@gmail.com>
+Date:   Thu Apr 13 23:19:03 2023 +0200
+
+    refactoring
+
+[33mcommit 7f0d0eb6a8fd20c6873c6be855c2e8fa7a29215f[m
+Author: Marek Mitko <mitko.email@gmail.com>
+Date:   Thu Apr 13 23:03:20 2023 +0200
+
+    update
+
+[33mcommit e0ea6e5c447f5921ddd2732783e094e6ac3bcd25[m
+Author: Marek Mitko <mitko.email@gmail.com>
+Date:   Thu Apr 13 22:47:44 2023 +0200
+
+    refactoring
+
+[33mcommit 8aa442dc7d9af1aba05300d4e47d0ec211966b56[m
+Author: Marek Mitko <mitko.email@gmail.com>
+Date:   Thu Apr 13 22:43:32 2023 +0200
+
+    fix(refactoring)
+
+[33mcommit b98e4840bf0fafa3ec7041822276777a52c5e5c7[m
+Author: Marek Mitko <mitko.email@gmail.com>
+Date:   Thu Apr 13 22:34:28 2023 +0200
+
+    fixed(About): content entered
+
+[33mcommit 220fef34355b076d278afdad573a48742f412576[m
+Author: Marek Mitko <mitko.email@gmail.com>
+Date:   Thu Apr 13 18:35:52 2023 +0200
+
+    fixed(Home): content entered
+
+[33mcommit 0d9d946ec5c923536d0189a0c82c7da74285b05b[m
+Author: Marek Mitko <mitko.email@gmail.com>
+Date:   Thu Apr 13 17:47:42 2023 +0200
+
+    add finall StainHamburger--menu
+
+[33mcommit 4f002bed545e10360fc1d4448bf25b446ab1dd97[m
+Author: Marek Mitko <mitko.email@gmail.com>
+Date:   Thu Apr 13 01:06:28 2023 +0200
+
+    added StainHamburger
+
+[33mcommit 8a8a24d890cb702ae74d2d66ac995017645ae209[m
+Author: Marek Mitko <mitko.email@gmail.com>
+Date:   Wed Apr 12 21:46:32 2023 +0200
+
+    initial
+
+[33mcommit a40f323efb0d0d8513964d87fabbbe52e6ecbb9a[m
+Author: Marek Mitko <mitko.email@gmail.com>
+Date:   Wed Apr 12 21:36:59 2023 +0200
+
+    Initial commit from Create Next App

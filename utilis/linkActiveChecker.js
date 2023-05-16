@@ -4,3 +4,5 @@ export const isActiveLink = (menuPath, routePath) => {
     return menuPath.replace(/\/\d+/, "") === routePath.replace(/\/\d+/, "");
   }
 };
+
+nextConfigOutput: 'standalone' | 'export'
